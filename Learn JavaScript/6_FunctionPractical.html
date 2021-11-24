@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let age = 12;
+
+        let record = [];
+        let index = 0;
+
+        function saverecord(w,b,r){
+            record[index] = {
+                width : w,
+                breadth : b,
+                result : r,
+            };
+            index++;
+        };
+    
+
+        function calcArea(width,breadth){
+            let calc = width * breadth;
+            let result = calc+"  "+"sqft";
+            saverecord(width,breadth,result);
+            return result;
+        };
+
+
+
+        let rates = {
+            KES : "15.120",
+            THB : "49.947",
+            EGP : "104.17",
+            USD : "1636.0"
+        };
+
+        function exchange(ammount,currency){
+            console.log(ammount,rates[currency]);
+            let calc = ammount * rates[currency];
+            let result = calc+" "+"MMK";
+            return result;
+        };
+
+        function exchangefrom(ammount,currency){
+            console.log(ammount,rates[currency]);
+            let calc = ammount / rates[currency];
+            let result = calc+" "+currency;
+            return result;
+        };
+
+
+        let fruitprice = {
+            orange : 200,
+            apple : 500,
+            mango : 400
+        }
+
+        function calctax(ammount,parcent=5){
+            return (ammount*parcent)/100;
+        }
+
+        function calcCose(quentity,fruit){
+            console.log(quentity,fruitprice[fruit]);
+            let calc = quentity * fruitprice[fruit];
+            let result = calc+" "+"mmk";
+            return {
+                name : fruit,
+                quentity : quentity,
+                unitprice : fruitprice[fruit],
+                cost : result,
+                tax : calctax(calc),
+                total : calctax(calc)+calc,
+
+            };
+
+    
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

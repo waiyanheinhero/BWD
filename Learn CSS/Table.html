@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List & Table</title>
+
+    
+    <style>
+
+        .title{
+            color: #46c3db;
+        }
+       
+        /* Child Selector */
+        .title span{
+            color: red;
+        }
+
+        *{
+           font-size: 30px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        tr{
+            /* border-bottom: 1px solid black; */
+            background-color: blue;
+        }
+
+        th,td{
+            border: 4px solid black;
+            padding: 10px 10px ;
+        }
+
+        tbody tr:hover{
+            background-color:#feff89;
+        }
+
+        thead th{
+            background-color: #46c3db;
+            color: white;
+            text-align: left;
+        }
+
+        /* Child Selector */
+        tbody tr td:first-child{
+            background-color: violet;
+        }
+        tbody tr td:last-child{
+            background-color: rgb(253, 80, 68);
+        }
+
+        .text{
+            text-align: center;
+        }
+
+        /* important Selector */
+        .total{
+            text-align: center;
+            font-weight: 200;
+            background-color: #fff !important;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1 class="title">Table <span>CSS</span></h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Course</th>
+                <th>Fee</th>
+                <th>Discount</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>BWd (Basic Web Design)</td>
+                <td class="text">2000</td>
+                <td class="text">100%</td>
+                <td class="text">0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SWd (Special Web Design)</td>
+                <td class="text">20000</td>
+                <td class="text">80%</td>
+                <td class="text">2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Wd (Web Design)</td>
+                <td class="text">50000</td>
+                <td class="text">70%</td>
+                <td class="text">5000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Laravel</td>
+                <td class="text">25000</td>
+                <td class="text">50%</td>
+                <td class="text">2500</td>
+            </tr>
+            <tr>
+                <td class="total" colspan="4">Total</td>
+                <td>400000</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+</body>
+</html>

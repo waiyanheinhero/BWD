@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let fruits = ["apple","orange","mango","lemon","banana"];
+        let marks = [37,14,12,54,77,22];
+        let myInfo = {name : "waiyan", age : 25, girl : 1, sex : "male", liveIn : "hlegu"};
+
+
+            
+            for(let i=0; i<=fruits.length; i++){
+
+                console.log(i+" "+fruits[i]);
+
+            };
+
+        let total = 0;
+            for(let i=0; i< marks.length; i++){
+                total += marks[i];
+                
+            }
+            console.log(total);
+
+
+            for(fruit of fruits){
+                console.log(fruit);
+            }
+
+            for(fruit in fruits){
+                console.log(fruit+" "+fruits[fruit])
+            }
+
+            for(let x in myInfo){
+                console.log(x+" "+myInfo[x])
+            }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+
+    <style>
+        .aa{
+            width: 600px;height: 100px;
+            border: 2px solid rgb(8, 0, 0);
+            margin: 10px auto;
+            text-align: center;
+            padding: 50px;
+            transition: 5s;
+        }
+
+        .aa:hover{
+            background-color: greenyellow;
+            transition: 3s;
+        }
+
+        .aa:active{
+            background-color: blue;
+        }
+
+        .bb{
+            width: 500px;
+            text-align: center;
+        
+
+        }
+
+        .bb:focus{
+            
+            background-color: red;
+        }
+        
+        .bb:hover{
+            background-color: cornflowerblue;
+            transition: 4s;
+        }
+
+        pre{
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+        span:hover pre {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    
+    
+        <p class="aa">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tenetur, ratione beatae atque, possimus, 
+            veniam consequatur ducimus architecto 
+            nesciunt similique quisquam quis nostrum! 
+            Sit nihil iure dolor repudiandae atque illo.
+        </p>
+    
+
+
+    <textarea name="" id="" cols="30" rows="10" class="bb">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aspernatur adipisci veritatis quo doloribus quis dolores, velit fuga unde soluta vero labore magnam eligendi, ducimus quidem sunt, repellat dicta eveniet?
+    
+    </textarea>
+
+    <br>
+    <br>
+
+
+    <span style="display: block;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <pre>Hello Min Ga Lar Par</pre>
+    </span>
+
+</body>
+</html>

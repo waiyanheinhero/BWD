@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+        function mytest(){
+            console.log(this); //return windows obj
+        }
+
+        let obj = {
+            name : "waiyan",
+            age : 12,
+            sex : "male",
+            skill : ["football","playpiano","guitar"],
+
+            method : function(){
+                return "this is method";
+            },
+
+            // method es6
+            run(parameter){
+                return "this is es6----"+parameter;
+            },
+
+            showall(){
+                // console.log(this);
+                return `my name is ${this.name} and i am ${this.age} years old`;
+            }
+        };
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
