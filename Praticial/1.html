@@ -7,16 +7,28 @@
     <title>11111111</title>
 </head>
 <body>
-    <script>
-            
-            const cars = ["BMW", "Volvo", "Saab", "Ford"];
-            let i = 0;
-            let len = cars.length;
-            let text = "";
 
-            for (; i < len; i++) {
-            console.log (cars[i]);
-            }
+        <h1 id="header">Wai Yan Hein</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aliquam, saepe maiores vero accusantium excepturi delectus corporis a assumenda, repudiandae 
+            aspernatur maxime reiciendis. Consectetur exercitationem quidem expedita repellendus quo laboriosam?
+        </p>
+        <input type="text" id="input">
+        <button onclick="change()">Click</button>
+        
+
+    <script>
+        
+        let h = document.getElementById("header");
+        let i = document.getElementById("input");
+        let inputText = prompt("say something?");
+        h.innerText = inputText;
+
+        function change(){
+            // let a = i.value;
+            h.innerText = i.value;
+        }
+        
 
 
     </script>

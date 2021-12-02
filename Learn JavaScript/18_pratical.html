@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #result{
+        width: 200px;
+        display: inline-block;
+    }
+
+
+</style>
+<body>
+    
+    <h1>Area Calculator</h1>
+    <div>
+        <span>Result : </span>
+        <span id="result"></span>
+        <button onclick="addlist()">Store</button>
+        <button onclick="clearText()">Clear</button>    
+    </div>
+    
+    <br>
+
+    <div>
+        <input type="number" id="width" placeholder="Width">
+        <input type="number" id="breadth" placeholder="Breadth">
+        <input type="button" value="Calculate" onclick="Calc()">
+    </div>
+
+    <ul id="list">
+        <li>abc</li>
+    </ul>
+
+    <script>
+
+        let width = document.getElementById("width");
+        let breadth = document.getElementById("breadth");
+        let result = document.getElementById("result");
+        let list = document.getElementById("list")
+
+
+        function Calc(){
+            if(width.value == 0 || breadth.value == 0){
+                alert("I don't no")
+            }else{
+                let Area = width.value * breadth.value;
+                result.innerHTML = `${width.value}ft x ${breadth.value}ft = ${Area}ft<sup>2</sup>`;
+                width.value = "";
+                breadth.value = "";
+            }
+
+            
+        };
+
+        function addlist(){
+            if(result.innerHTML == ""){
+                alert("Need to Result")
+            }else{
+                list.innerHTML += `<li>${result.innerHTML}</li>`;
+                result.innerHTML = "";
+            }
+          
+        };
+
+        function clearText(){
+            result.innerHTML = "";
+        }
+
+
+    </script>
+
+</body>
+</html>

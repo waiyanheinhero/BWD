@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        #result{
+            width: 150px;
+            display: inline-block;
+        }
+</style>
+</head>
+
+<body>
+        <h1>Area Calculator</h1>
+        <div>
+            <span>Answer :</span>
+            <span id="result"></span>
+            <button onclick="addButton()">Store</button>
+            <button onclick="clearText()">Clear</button>
+            <button ondblclick="deleText()">Delete</button>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="number" placeholder="Width" id="width">
+            <input type="number" placeholder="breadth" id="breadth">
+            <input type="button" value="Calculate" onclick="calcTest()">
+        </div>
+
+        <ul id="list">
+            
+        </ul>
+
+        <script>
+            let width = document.getElementById("width");
+            let breadth = document.getElementById("breadth");
+            let result = document.getElementById("result");
+            let list = document.getElementById("list")
+
+            function calcTest(){
+                if(width.value == 0 || breadth.value == 0){
+                    alert("No need")
+                }else{
+                    let Area = width.value * breadth.value;
+                    result.innerHTML = `${width.value}ft x ${breadth.value}ft = ${Area}ft<sup>2</sup>`;
+                    width.value = "";
+                    breadth.value = "";
+                
+                }
+                
+            }
+
+            function addButton(){
+                if(result.innerHTML == ""){
+                    alert("No")
+                }else{
+                    list.innerHTML += `<li>${result.innerHTML}</li>`;
+                    clearText();
+                }
+               
+            }
+
+            function clearText(){
+                result.innerHTML = "";
+                
+            }
+            
+            function deleText(){
+                list.innerHTML = "";
+            }
+
+
+        </script>
+
+
+</body>
+</html>

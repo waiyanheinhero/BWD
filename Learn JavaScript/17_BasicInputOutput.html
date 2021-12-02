@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Output</title>
+</head>
+<body>
+
+        <h1 id="header">Wai Yan Hein</h1>
+        <h2 class="class">Wai Yan</h2>
+        <h3>Wai Yan</h3>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore autem provident earum rerum? Reiciendis distinctio praesentium autem, ipsum corporis consequatur, aperiam beatae nesciunt inventore officia perferendis cupiditate blanditiis amet repellat?
+        </p>
+
+        <input type="text" name="" id="inputText">
+        <button onclick="change()">Click</button>
+
+        <ul>
+            <li>apple</li>
+            <li>orange</li>
+            <li>mango</li>
+            <li>banana</li>
+        </ul>
+
+
+    <script>
+
+        // // window input text
+        // let x = window.prompt("What is your name?");
+        // console.log(x);
+
+
+
+        // // window output text
+        // window.alert(x);
+        // console.log(x);  
+
+
+
+        // let i = window.confirm("စားပီးပီလား ?")
+        // console.log(i)
+
+        // document.write(`<h1>${i ? "စားပြီးပြီ" : "မစားရသေးပါ"}</h1>`);
+
+        // let h = document.getElementById("header");
+        // let input = prompt("say something");
+        // h.innerText = input;
+        // document.getElementById("header").innerText = input;
+
+        let i = document.getElementById("inputText");
+        let h = document.getElementById("header");
+
+        function change(){
+            let inputText = i.value;
+            h.innerText = inputText;
+
+        }
+
+
+
+    </script>
+</body>
+</html>
