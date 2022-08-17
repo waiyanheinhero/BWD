@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="input">
+    <button onclick="save()">Save</button>
+    <br>
+    <br>
+
+    <button onclick="run('C4')">C</button>
+    <button onclick="run('D4')">D</button>
+    <button onclick="run('E4')">E</button>
+    <button onclick="run('F4')">F</button>
+    <button onclick="run('G4')">G</button>
+    <button onclick="run('A4')">A</button>
+    <button onclick="run('B4')">B</button>
+    <button onclick="run('C5')">C</button>
+
+    <ul id="list"></ul>
+    <script>
+
+        let input = document.getElementById("input");
+        let list = document.getElementById("list");
+        let pianoMemory = [];
+
+        function run(x){
+            let a = new Audio(`../6.Swd (JavaScript)/js/sound/${x}.mp3`);
+            a.play();
+            input.value += x +",";
+        };
+
+        let m = ["C4","D4","E4"];
+        function runMemory(arr,delay = 1000){
+                let x = delay;
+                arr.map(function(el){
+                setTimeout(run,x,el)
+                x += delay;
+            })
+        }
+        
+        function save(){
+            pianoMemory.push(input.value);
+            input.value = "";
+            list.innerHTML = ""
+            console.log(pianoMemory);
+            pianoMemory.map(function(el,index){
+                list.innerHTML += `<li>${el}<button onclick="rePlay(${index})">Replay</button></li>`
+            })
+                
+        }
+
+        function rePlay(x){
+            let current = pianoMemory[x].split(",");
+            current.pop();
+            runMemory(current)
+            
+        }
+
+        document.addEventListener("keyup",function(event){
+            let swit = event.keyCode;
+            if(swit == 65){
+                run('C4')
+            }else if(swit == 83){
+                run('D4')
+            }else if(swit == 68){
+                run('E4')
+            }else if(swit == 70){
+                run('F4')
+            }else if(swit == 74){
+                run('G4')
+            }else if(swit == 75){
+                run('A4')
+            }else if(swit == 76){
+                run('B4')
+            }else if(swit == 186){
+                run('C5')
+            }
+            console.log(event.keyCode);
+        })
+      
+    </script>
+</body>
+</html>

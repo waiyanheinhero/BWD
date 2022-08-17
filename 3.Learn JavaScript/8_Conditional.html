@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition</title>
+</head>
+<body>
+    
+    <script>
+
+        function run(){
+            console.log("i am run 1");
+            console.log("i am run 2");
+            console.log("i am run 3");
+            console.log("i am run 4");
+
+        }
+
+        let condition = false;
+
+        if(condition){
+            console.log("i am run 1");
+            console.log("i am run 2");
+            console.log("i am run 3");
+            console.log("i am run 4");
+
+        }else{
+            console.log("i am false");
+        }
+
+
+        let wakeupTime = 6;
+
+        if(wakeupTime > 7){
+            console.log("တုတ်နဲ့ရိုက်မယ်");
+        }else{
+            console.log("မုန့်ကျွေးမယ်");
+        }
+
+
+        // let money = 500;
+
+        //if(money >= 200){
+        //     console.log("ကျောင်းကိုကားနဲ့သွားမယ်");
+        //     money -= 200;
+        // }else{ 
+        //     console.log("လမ်းလျောက်သွားမယ်");
+        // }
+
+        // console.log("လက်ကျန်ငွေ -- "+money)
+
+
+        let reqMoney = 1500;
+
+        if(reqMoney > 1000){
+            console.log("i go to school");
+
+            if(reqMoney >= 200){
+                console.log("ကျောင်းကိုကားနဲ့သွားမယ်");
+                reqMoney -= 200;
+            }else{
+                console.log("လမ်းလျှောက်သွားမယ်");
+            };
+
+            console.log("လက်ကျန်ငွေ -"+reqMoney);
+
+        }else{
+            console.log("i don't go to school");
+        };
+
+
+        let mark = "aa";
+        
+        if(mark < 40){
+            console.log("စာမေးပွဲကျပါသည်");
+        }else if(mark >= 80){
+            console.log("ဂုဏ်ထူးထွက်ပါသည်");
+        }else if(mark >= 40){
+            console.log("စာမေးပွဲအောင်ပါသည်");
+        }else{
+            console.log("ဘာမှသုံးစားမရပါ")
+        }
+
+
+
+    </script>
+
+
+
+</body>
+</html>

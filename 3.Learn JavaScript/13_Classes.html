@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+    <script>
+
+        // let mySelf = {
+        //     name : "waiyanhein",
+        //     age : 25,
+        //     girl : "Ei",
+        //     skill : "football",
+
+        //     method(){
+        //         return ("this is method")
+        //     },
+
+        //     teach(){
+        //         return `my name is ${this.name}`;
+        //     }
+
+        // }
+
+        
+       
+
+        class MySelf {
+
+            constructor(a,b){
+                console.log("this is constructor-----"+a+" "+b);
+                this.skill = a;
+            }
+
+            name = "waiyanhein";
+            // instance ဆောက်စရာမလိုဘဲ data ကို Myself.age နဲ့ ဆွဲထုတ်လို့ရတယ်
+            static age = 25; 
+            girl = "ei";
+
+            teach(){
+                return this.name+" i can teach";
+            }
+
+            showBdyear(){
+                return "i bon is 1996";
+            }
+
+        }
+
+
+        // instantiate
+        // class ===> obj ဖစ်သွားအောင် new ကလုပ်ဆောင်ပေးတယ်
+
+
+        let x = new MySelf("waiyan","eiei");
+        console.log(x.name);
+        console.log(x.age);
+        console.log(x.teach());
+
+
+        class Student {
+            constructor(name,age,phone,girl,){
+                this.name = name;
+                this.age = age;
+                this.phone = phone;
+                this.girl = girl;
+            } 
+
+            learn(){
+                return this.name +" can learn";
+            }
+        }
+
+        let s1 = new Student("MgMg",12,"097979797","ThiThi");
+        let s2 = new Student("KyawKyaw",22,"09123221","MiMi");
+        let s3 = new Student("MyaMya",55,"012165456","HninHnin");
+        let s4 = new Student("HlaHla",72,"55454321","MoeMoe");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

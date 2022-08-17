@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let d = new Date(2050,7,23);
+
+
+        // console.log(d.getDate()+" / "+d.getMonth()+" / "+d.getFullYear());
+
+        // new Date(year,month,day,hour,munite,second)
+        const d = new Date();
+        console.log(d);
+        
+        let current = d.getHours();
+        d.setHours(current+300);
+       
+        console.log(d);
+     
+        d.setMonth(d.getMonth()+4);
+        console.log(d);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <style>
+
+        *{
+            font-family: 'Abhaya Libre', serif;
+        }
+
+        .btn{
+        
+            color:blue ;
+            padding: 20px 20px;
+            text-decoration: none;
+            text-decoration: underline;
+            display: inline-block;
+            font-size: 32px;
+        }
+
+        .btnA{
+        
+            background-color:rgb(61, 233, 18);
+            border: 3px solid black;
+        }
+
+ 
+        .btnA:active{
+            background-color: rgb(233, 35, 8);
+            border-color: rgb(233, 35, 8);
+        }
+
+ 
+        
+        .btn-second{
+            background-color:rgb(61, 233, 18);
+            border: 3px solid black;
+        }
+
+        .btn-second:active{
+            background-color: rgba(255, 196, 0, 0.808);
+            border-color: rgba(255, 196, 0, 0.808);
+        }
+
+        .outline{
+            background-color:#fff;
+            border: 3px solid blue;
+        }
+
+        .outline:hover{
+            background-color:blue;
+            color: white;
+            transition: 0.5s;
+        }
+
+
+        .A,.B{
+            background-color: #fff;
+            color: rgb(1, 8, 14);
+            border: 2px solid black;
+            transition: 1s;
+        }
+        .A:hover{
+            background-color: black;
+            color: white;
+            transition: 1s;
+            padding-right: 50px;
+            box-shadow: 10px 10px 10px black;
+        }
+        /* .B{
+            background-color: #fff;
+            color: red;
+            border: 2px solid red;
+            transition: 4s;
+        } */
+        .B:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+            padding-right: 50px;
+            box-shadow: 10px 10px 10px red;
+        }
+        .C{
+            background-color: #fff;
+            color: green;
+            border: 2px solid green;
+            transition: 4s;
+        }
+        .C:hover{
+            background-color:green;
+            color: white;
+            transition: 1s;
+            padding-right: 50px;
+            box-shadow: 10px 10px 10px green;
+        }
+        .D{
+            background-color: #fff;
+            color: blue;
+            border: 2px solid blue;
+            transition: 4s;
+        }
+        .D:hover{
+            background-color:blue;
+            color: white;
+            transition: 1s;
+            padding-right: 50px;
+            box-shadow: 10px 10px 10px blue;
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <button class="btn btnA">Button Click</button>
+    <a class="btn btnA" href="">A Click</a>
+
+    <button class="btn btn-second">Wai Yan Hein</button>
+    <a class="btn btn-second" href="">Darck</a>
+
+    <hr>
+    
+
+    <button class="btn outline">Outline Click</button>
+
+    <button class="btn outline">
+
+        <i class="fas fa-guitar"></i>
+
+    </button>
+
+    <button class="btn btnA">
+
+        <i class="fas fa-car"></i>
+
+    </button>
+
+    <hr>
+    
+    <button class="btn A">A</button>
+    <button class="btn B">B</button>
+    <button class="btn C">C</button>
+    <button class="btn D">D</button>
+
+</body>
+</html>

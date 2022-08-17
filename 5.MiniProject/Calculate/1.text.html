@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+
+        .key{
+            padding: 20px;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1 class="box-title"></h1>
+            <div class="keypard"></div>
+
+    </div>
+
+    <script>
+
+        let opeator = ["+","-","*","/","="];
+        let keypard = document.querySelector(".keypard");
+        let display = document.querySelector(".box-title")
+
+        for(let i=0;i<10;i++){
+            keypard.innerHTML += `<button class="key" onclick="show(${i})">${i}</button>`;
+            
+        };
+
+        opeator.forEach((el)=> {
+            if(el == "="){
+                keypard.innerHTML += `<button class="key" onclick="calc()">${el}</button>` 
+            }else{
+                keypard.innerHTML += `<button class="key" onclick="show('${el}')">${el}</button>` 
+            }
+        })
+
+
+
+
+        let calc = ()=> display.innerHTML = eval(display.innerText);
+
+        let show = (i)=> display.innerText += i 
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <style>
+        *{
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        body{
+            padding: 15px;
+        }
+        .card{
+            width: 300px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+            border-radius: 10px;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            margin: 10px auto;
+        }
+        .card-body{
+            padding: 20px;
+        }
+        .card-title{
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #46c3db;
+        }
+        .card-paragraph{
+            margin-bottom: 0px;
+            color: rgb(94, 84, 84);
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-left{
+            text-align: left;
+        }
+        .card-img{
+            width: 300px;
+            height: 250px;
+            display: block;
+        }
+        .card-icon{
+           font-size: 100px;
+           margin: 30px 0;
+           color:blanchedalmond;
+           
+        }
+        .button{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: #fff;
+            border: 0px;
+            border-radius: 30px;
+            display: block;
+            margin:auto 15px auto auto;
+            margin-top: -30px;
+            position: relative;
+        }
+
+        .Seemore{
+            background-color: #46c3db;
+            color: #fd1212;
+            border: 0px;
+            border-radius: 10px;
+            display: block;
+            margin: -30px 0px 10px 222px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-title">Min Ga Lar Par</p>
+            <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo, minima veritatis velit soluta ullam sit cupiditate,
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-center">
+            <p class="card-title">Min Ga Lar Par</p>
+            <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo, minima veritatis velit soluta ullam sit cupiditate,
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-right">
+            <p class="card-title">Min Ga Lar Par</p>
+            <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo, minima veritatis velit soluta ullam sit cupiditate,
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="card">
+        <img src="./Ei.jpeg" class="card-img"  alt="">
+        <div class="card-body text-left">
+            <p class="card-title">Ei Thinzar Maung</p>
+            <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo, minima veritatis velit soluta ullam sit cupiditate,
+            </p>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url(./img/2.jpeg)" >
+        <div class="card-body text-left">
+            <i class="fab fa-apple card-icon"></i>
+            <p class="card-title">Apple</p>
+            <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo, minima veritatis velit soluta ullam sit cupiditate,
+            </p>
+        </div>
+        <button class="Seemore">Seemore</button>
+    </div>
+
+
+    <div class="card">
+        <img src="./assets/poe.jpg" class="card-img"  alt="">
+        <button class="button">
+            <i class="fas fa-camera fa-2x"></i>
+        </button>
+        <div class="card-body text-left">
+            <p class="card-title">Poe</p>
+            <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo, minima veritatis velit soluta ullam sit cupiditate,
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>

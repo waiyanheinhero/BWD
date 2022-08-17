@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function a(){
+            return "I'm function";
+        }
+        //task -> လက်ရှိ အသက်ထည့်ပေးရင် မွေးနှစ်ထူတ်ပေးမယ်
+        // let currentAge = 25;
+        // let birthYear = 2021 - currentAge;
+        // let result = `သင့်ကို ${birthYear} ခုနှစ်တွင်မွေးဖွားခဲ့ပါသည်။`;
+
+        currentAge = 17;
+
+        function getbirthday (name,currentAge){
+            let birthYear = 2021 - currentAge;
+            let result = `${name} ကို ${birthYear} ခုနှစ်တွင်မွေးဖွားခဲ့ပါသည်။`;
+
+            return result;
+        }
+
+
+    </script>
+
+
+    <script>
+        
+
+        let age = 25;
+        let name = "Waiyanhein";
+        console.log(age+" "+ name);
+        
+
+        function b(){
+            return "statment";
+        }
+
+        // expression
+        let run = function(){
+            return a()+" function expression"+" "+name+" "+age;
+        };
+
+        // IIFE
+        (function(){
+            console.log ("this is IIFE");
+        })();
+
+        (function(){
+            console.log("Waiyan");
+        })()
+
+
+        console.log(run());
+
+        // block scope
+        {
+            // not use
+            let a = 12;
+            var b = 23;
+        }
+
+        console.log(b);
+
+        // local scope
+        function cc(){
+            let aa = 12;
+            let bb = 55;
+
+            console.log(aa);
+            console.log(bb);
+
+            //global scope
+            console.log(age);
+            
+        }
+
+    </script>
+
+
+
+</body>
+</html>

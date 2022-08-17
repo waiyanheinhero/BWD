@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      width: 200px;
+    }
+    .detectArea{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  
+    <img src="../4.Learn Prepar for MiniProject/bulboff.gif" alt="" id="bulboff">
+    <div class="">
+          <button onclick="bulbOn()">Bulb On</button>
+          <button onclick="bulbOff()">Bulb Off</button>
+          <hr>
+          <button onclick="toggle()">TouchBulbon</button>
+          <hr>
+          <button onclick="toggle()">Switch 1</button>
+          <button onclick="toggle()">Switch 2</button>
+          <hr>
+        <div class="detectArea">
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+      let bulboff = document.querySelector("#bulboff");
+      let Area = document.querySelector(".detectArea")
+
+        function bulbOn(){
+            bulboff.setAttribute("src","../4.Learn Prepar for MiniProject/bulbon.gif")
+        } 
+        function bulbOff(){
+            bulboff.setAttribute("src","../4.Learn Prepar for MiniProject/bulboff.gif")
+        }
+
+        function toggle(){
+            if(bulboff.getAttribute("src") == "../4.Learn Prepar for MiniProject/bulboff.gif"){
+                bulbOn();
+            }else{
+              bulbOff();
+            }
+        }
+
+        Area.addEventListener("mouseenter",function(){
+            bulbOn();
+            setTimeout("bulbOff()",3000)
+        })
+
+
+    </script>
+
+</body>
+</html>

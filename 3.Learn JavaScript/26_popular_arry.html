@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="./js/shop.js"></script>
+
+    <script>
+
+
+        const fruits = ["apple","orange","mango","lemon","banana"];
+        const marks = [1232,40,7585,5588,99,10,20];
+
+        // let newArr = fruits.map(function(element){
+        //     console.log(element);
+        //     return element;
+        // })
+
+        // let newArr = marks.map(function(element){
+        //     console.log(element);
+        //     return element>=40 ? "အောင်" : "ကျ";
+        // })
+
+        // let newArr = shop.map(function(element){
+        //     return element.title+" "+element.price;
+        // });
+
+        // let newArr = marks.filter(function(element){
+        //     return element>=75;
+        // });
+
+        // let newArr = shop.filter(function(element){
+        //     console.log(element.price);
+        //     return element.price>100;
+        // });
+
+        // let newArr = shop.find(function(el){
+        //     console.log(el);
+        //     return el.id == 3;
+        // });
+
+        // let newArr = fruits.reduce(function(p,c){
+        //     console.log(p+c);
+        //     return p+c
+        // },0);
+
+            let newArr = marks.every(function(element){
+                console.log(element)
+                return element>=40;
+        });
+
+        console.log(newArr)
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.box{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+.info{
+    width: 50%;
+}
+.info-title{
+    color: #ffffff;
+}
+.info-delection{
+    margin: 15px 0px;
+    color: #ffffff90;
+}
+.info-place{
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff90;
+}
+.current-place{
+    font-weight: bold;
+    font-size: 30px;
+    color: pink;
+}
+
+
+.map svg path{
+    fill: #ffffff;
+    transition: 1.5s;
+}
+.map svg path:hover{
+    fill: pink;
+    
+}

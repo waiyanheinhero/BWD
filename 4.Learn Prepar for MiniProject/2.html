@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+        }
+
+        .detectArea{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./bulboff.gif" alt="" id="Light">
+    </div>
+    <br>
+    <br>
+
+    <div class="">
+        <button onclick="lightOn()">Light On</button>
+        <button onclick="lightOff()">Light Off</button>
+        <br>
+        <br>
+        <button onclick="toggle()">TouchBulbon</button>
+    </div>
+
+    <hr>
+
+    <div class="switch">
+        <button onclick="toggle()">Switch 1</button>
+        <button onclick="toggle()">Switch 2</button>
+    </div>
+
+    <hr>
+
+    <div class="detectArea" >
+       
+    </div>
+
+    
+
+    <script>
+
+        let Lightbulb = document.getElementById("Light");
+
+        function lightOn(){
+            Lightbulb.setAttribute("src","bulbon.gif")
+        }
+
+        function lightOff(){
+            Lightbulb.setAttribute("src","bulboff.gif")
+        }
+
+
+        let toggle = ()=>{
+            if(Lightbulb.getAttribute("src") == "bulbon.gif"){
+                lightOff()
+            }else{
+                lightOn();
+            }
+        }
+
+        let detectArea = document.querySelector(".detectArea");
+
+        detectArea.addEventListener("mouseenter",function(){
+            lightOn();
+            setTimeout("lightOff()",3000);
+        })
+        
+
+    </script>
+</body>
+</html>

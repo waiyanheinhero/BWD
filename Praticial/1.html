@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 200px;
+            border: 1px solid black;
+            padding: 50px;
+            font-size: 100px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .color{
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p>Yes</p>
+    </div>
+
+    <button onclick="changColor()">Change Click</button>
+
+    <script>
+
+        let box = document.querySelector(".box");
+        // let changColor = document.getElementById("change");
+        // let color = document.getElementById("color")
+        let text = box.children[0];
+
+        let changColor= ()=>{ 
+
+            if(text.innerHTML == "Yes"){
+                text.innerHTML = "No";
+            }else{
+                text.innerHTML = "Yes"
+            }
+
+            box.classList.toggle("color")
+
+        }
+
+        
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

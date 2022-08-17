@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Min Ga Lar Par</h1>
+    <h1>Wai Yan Hein</h1>
+    <h1>Ei Thinzar Mg</h1>
+    <h1>Wut Hmone Shwe Yi</h1>
+
+    
+
+    <script>
+
+
+        const fruits = ["apple","mango","banana","orange"];
+
+        // for(let i=0;i<fruit.length;i++){
+        //     console.log(fruit[i]);
+        // }
+
+        let ul = document.createElement("ul");
+
+        fruits.forEach(function(i){
+            console.log(i);
+            let li = document.createElement("li");
+            let text = document.createTextNode(i)
+            li.append(text);
+            ul.append(li);
+        });
+
+        document.body.append(ul);
+
+        let Allh = document.querySelectorAll("h1");
+        let h1Arr = [];
+
+        Allh.forEach(function(i){
+            console.log(i)
+        })
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

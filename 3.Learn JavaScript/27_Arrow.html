@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function one(){
+        //     return "this is one";
+        // }
+
+        let one = () => "this is one";
+        
+
+
+        // function two(){
+        //     let x = "this is two";
+        //     return x;
+        // }
+
+        let two = _ => {
+            let x = "this is two";
+            return x;
+        }
+
+        // function three(x){
+        //     return "this is "+x;
+        // }
+
+        let three = x => "this is "+x;
+
+
+        // function four(x,y){
+        //     let z = x+y;
+        //     return z;
+        // }
+
+       let four = (x,y) => x+y;
+
+
+        (function(){
+            console.log("this is five");
+            return "this is five";
+        })
+
+        window.addEventListener("load",function(){
+            console.log("this is six");
+        });
+
+        let seven = {
+            name : "seven",
+            // showName : function(){
+            //     return `this is ${this.name}`;
+            // },
+            showName : () => `this is seven`,
+        }
+
+
+        const fruits = ["apple","mango","orange","lemon","line"];
+
+        // let result = fruits.filter(function(el){
+        //     return el.length == 5
+        // }).map(function(el){
+        //     return el.toUpperCase();
+        // }).join("-").toLowerCase();
+
+        let result = fruits.filter(el=>el.length==5).map(el=>el.toUpperCase());
+
+        console.log(result);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
